@@ -2,13 +2,38 @@
 
 # Jalil Abdollahi
 
-**Infrastructure Engineer · AI Tooling · Platform Education**
-
-I build tools that make cloud infrastructure approachable — AI-powered copilots that translate intent into real deployments, and hands-on training platforms where engineers learn by breaking real systems and fixing them.
+**Senior Cloud DevOps Engineer · Infrastructure Tooling · Platform Education**
 
 [![Email](https://img.shields.io/badge/Email-jalil.abdollahi@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:jalil.abdollahi@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jalil--abdollahi-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/jalil-abdollahi)
+[![Location](https://img.shields.io/badge/Location-Duisburg%2C%20Germany-4CAF50?style=flat-square&logo=googlemaps&logoColor=white)](https://maps.google.com/?q=Duisburg,Germany)
 
 </div>
+
+---
+
+## About Me
+
+Senior DevOps Engineer with 10+ years of IT experience and 5+ years focused on cloud platforms, Kubernetes, and CI/CD automation. I design, build, and operate production AWS and Kubernetes infrastructure — and I build the tools that make that work faster, safer, and more teachable.
+
+Currently working as a **Cloud DevOps Engineer at JAJA Finance** (London, Remote), where I lead CI/CD standardization with Jenkins and GitHub Actions, operate multi-cluster AWS EKS platforms with Terraform, and drive GitOps adoption with ArgoCD.
+
+Outside of my day job I build **AI-powered infrastructure tooling** and a series of **hands-on training platforms** where engineers learn Kubernetes, AWS, Terraform, Linux, Bash, Docker, and Git by fixing deliberately broken environments — no cloud bill, no accounts, just real tools.
+
+---
+
+## Skills
+
+| Area | Technologies |
+|---|---|
+| **Cloud & Platforms** | AWS · EKS · ECS Fargate · EC2 · IAM · VPC |
+| **Containers & Orchestration** | Docker · Kubernetes · Helm · Kustomize |
+| **CI/CD & GitOps** | Jenkins · GitHub Actions · ArgoCD · Argo Workflows |
+| **Infrastructure as Code** | Terraform · Ansible · Puppet · Crossplane · HashiCorp Vault |
+| **Observability** | Datadog · Prometheus · Grafana · Loki · CloudWatch · CloudTrail |
+| **Security** | OPA/Gatekeeper · WIZ · Kubernetes RBAC · IAM · Pod Identity |
+| **Scripting & Programming** | Bash · Python · HCL · YAML · C#/.NET · Go (basic) |
+| **Operations** | Linux · Git · GitHub · GitLab · Bitbucket · Agile/Scrum |
 
 ---
 
@@ -175,6 +200,8 @@ A real-time chat backend built with Express and Socket.IO, with JWT-secured REST
 
 <div align="center">
 
-**jalil.abdollahi@gmail.com**
+[![Email](https://img.shields.io/badge/jalil.abdollahi@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:jalil.abdollahi@gmail.com)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/jalil--abdollahi-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/jalil-abdollahi)
 
 </div>
