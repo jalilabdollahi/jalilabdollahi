@@ -43,16 +43,6 @@ A series of fully local, game-based training platforms. Each one drops you into 
 
 ---
 
-### [K8sMissions](https://github.com/jalilabdollahi/k8smissions) — Learn Kubernetes by breaking it
-
-> 200 progressive challenges · 12 modules · Beginner to production SRE
-
-Each mission presents a deliberately broken Kubernetes cluster. Diagnose and fix it using real `kubectl` commands. Features a rich terminal UI with XP progression, hint unlocking, watch mode, dry-run support, and module certificates.
-
-**Stack:** Python · Rich · kind · kubectl
-
----
-
 ### [AWSMissions](https://github.com/jalilabdollahi/awsmissions) — Learn AWS by fixing it locally
 
 > 196 progressive missions · 12 modules · No AWS account required
@@ -60,26 +50,6 @@ Each mission presents a deliberately broken Kubernetes cluster. Diagnose and fix
 A fully local AWS training game powered by LocalStack. Each mission drops you into a broken cloud environment — investigate what went wrong and repair it with the real `aws` CLI. Every level includes hints, a reference solution, and a debrief explaining the failure.
 
 **Stack:** Python · Rich · LocalStack · AWS CLI · Docker
-
----
-
-### [TerraformMissions](https://github.com/jalilabdollahi/terraformissions) — Learn Terraform by breaking it
-
-> 272 missions · 15 modules · Fundamentals to production war games
-
-Each mission delivers a broken `.tf` configuration. Fix it using real Terraform commands — `init`, `validate`, `plan`, `apply`. Covers HCL, state management, modules, testing, debugging, and production patterns.
-
-**Stack:** Python · Rich · Terraform · local providers
-
----
-
-### [LinuxMissions](https://github.com/jalilabdollahi/linuxmissions) — Learn Linux by fixing real terminal problems
-
-> 500 challenges · 26 modules · Navigation to Linux war games
-
-A game-based Linux training platform with sandboxed missions under `/tmp/linuxmissions/`. Each level has a broken or incomplete state to fix with shell commands. Includes debriefs, tab autocomplete, XP tracking, and progressive hints.
-
-**Stack:** Python · Rich · Bash · sandbox isolation
 
 ---
 
@@ -93,13 +63,13 @@ Each level gives you a real scripting task with automated tests, hints that esca
 
 ---
 
-### [PythonMissions](https://github.com/jalilabdollahi/pythonmissions) — Learn Python for DevOps by fixing broken scripts
+### [DockerMissions](https://github.com/jalilabdollahi/dockermissions) — Learn Docker in a real terminal, in your browser
 
-> 15 progressive missions · 3 difficulty bands · Beginner to advanced
+> 54 missions · 8 modules · Containers to production patterns
 
-A fully local Python troubleshooting game where each mission gives you a broken script to repair in a safe sandbox. Fix the bug, run the tests, read the debrief, and move forward through a structured path from simple syntax issues to more realistic DevOps-style automation problems.
+A browser-based Docker training game with an in-browser bash session connected to a live Docker environment. Instant automated validation, smart error analysis, XP progression, badges, and a leaderboard — all running locally.
 
-**Stack:** Python · Rich · pytest · sandboxed mission runner
+**Stack:** Node.js · React · xterm.js · Docker · Socket.IO
 
 ---
 
@@ -113,17 +83,57 @@ Each mission drops you into a deliberately broken Git repository. Diagnose the s
 
 ---
 
-### [DockerMissions](https://github.com/jalilabdollahi/dockermissions) — Learn Docker in a real terminal, in your browser
+### [K8sMissions](https://github.com/jalilabdollahi/k8smissions) — Learn Kubernetes by breaking it
 
-> 54 missions · 8 modules · Containers to production patterns
+> 200 progressive challenges · 12 modules · Beginner to production SRE
 
-A browser-based Docker training game with an in-browser bash session connected to a live Docker environment. Instant automated validation, smart error analysis, XP progression, badges, and a leaderboard — all running locally.
+Each mission presents a deliberately broken Kubernetes cluster. Diagnose and fix it using real `kubectl` commands. Features a rich terminal UI with XP progression, hint unlocking, watch mode, dry-run support, and module certificates.
 
-**Stack:** Node.js · React · xterm.js · Docker · Socket.IO
+**Stack:** Python · Rich · kind · kubectl
+
+---
+
+### [LinuxMissions](https://github.com/jalilabdollahi/linuxmissions) — Learn Linux by fixing real terminal problems
+
+> 500 challenges · 26 modules · Navigation to Linux war games
+
+A game-based Linux training platform with sandboxed missions under `/tmp/linuxmissions/`. Each level has a broken or incomplete state to fix with shell commands. Includes debriefs, tab autocomplete, XP tracking, and progressive hints.
+
+**Stack:** Python · Rich · Bash · sandbox isolation
+
+---
+
+### [PythonMissions](https://github.com/jalilabdollahi/pythonmissions) — Learn Python for DevOps by fixing broken scripts
+
+> 15 progressive missions · 3 difficulty bands · Beginner to advanced
+
+A fully local Python troubleshooting game where each mission gives you a broken script to repair in a safe sandbox. Fix the bug, run the tests, read the debrief, and move forward through a structured path from simple syntax issues to more realistic DevOps-style automation problems.
+
+**Stack:** Python · Rich · pytest · sandboxed mission runner
+
+---
+
+### [TerraformMissions](https://github.com/jalilabdollahi/terraformissions) — Learn Terraform by breaking it
+
+> 272 missions · 15 modules · Fundamentals to production war games
+
+Each mission delivers a broken `.tf` configuration. Fix it using real Terraform commands — `init`, `validate`, `plan`, `apply`. Covers HCL, state management, modules, testing, debugging, and production patterns.
+
+**Stack:** Python · Rich · Terraform · local providers
 
 ---
 
 ## AI & Cloud Tools
+
+---
+
+### [Datadog Log Analyzer](https://github.com/jalilabdollahi/datadog-log-analyzer) — Anomaly detection and incident reporting for Datadog logs
+
+> CLI · Web dashboard · AWS Lambda — same analysis engine across all modes
+
+Turns noisy Datadog log streams into actionable findings. Features pattern detection via tokenization and fingerprinting, spike detection, error correlation across services, trend analysis with rolling baselines, and AI-assisted incident summaries via Bedrock. Outputs Slack alerts, Jira tickets, HTML and JSON reports.
+
+**Stack:** Python · Datadog API · AWS Lambda · DynamoDB · Bedrock · Docker · Helm
 
 ---
 
@@ -154,16 +164,6 @@ KubeGuardian scans your cluster state — nodes, pods, deployments, replicasets,
 
 ---
 
-### [Datadog Log Analyzer](https://github.com/jalilabdollahi/datadog-log-analyzer) — Anomaly detection and incident reporting for Datadog logs
-
-> CLI · Web dashboard · AWS Lambda — same analysis engine across all modes
-
-Turns noisy Datadog log streams into actionable findings. Features pattern detection via tokenization and fingerprinting, spike detection, error correlation across services, trend analysis with rolling baselines, and AI-assisted incident summaries via Bedrock. Outputs Slack alerts, Jira tickets, HTML and JSON reports.
-
-**Stack:** Python · Datadog API · AWS Lambda · DynamoDB · Bedrock · Docker · Helm
-
----
-
 ### [Log Generator](https://github.com/jalilabdollahi/log-generator) — Realistic microservice log simulator for observability testing
 
 > 10 simulated microservices · structured JSON · scenario-based incidents · Datadog-ready
@@ -175,6 +175,16 @@ Simulates believable operational noise and targeted failure bursts for testing l
 ---
 
 ## Web Applications
+
+---
+
+### [AI Chat](https://github.com/jalilabdollahi/ai-chat-backend) — Real-time chat with optional AI-powered responses
+
+> WebSocket messaging · JWT auth · PostgreSQL · OpenAI integration
+
+A real-time chat backend built with Express and Socket.IO, with JWT-secured REST and WebSocket endpoints, PostgreSQL persistence, and optional OpenAI-powered responses. Paired with a modern React frontend.
+
+**Stack:** Node.js · Express · Socket.IO · PostgreSQL · JWT · React · OpenAI API
 
 ---
 
@@ -195,16 +205,6 @@ A production-style Next.js application combining a marketing site with client on
 A full-stack reporting system for recording daily technical work by date, tracking progress, and producing operational reports. Includes search and filtering, attachments, bulk workflows, a duplicate-previous-day shortcut, admin controls, and production tooling with Docker, Terraform, and GHCR image publishing.
 
 **Stack:** Next.js 14 · PostgreSQL · Prisma · NextAuth v5 · Docker · Terraform
-
----
-
-### [AI Chat](https://github.com/jalilabdollahi/ai-chat-backend) — Real-time chat with optional AI-powered responses
-
-> WebSocket messaging · JWT auth · PostgreSQL · OpenAI integration
-
-A real-time chat backend built with Express and Socket.IO, with JWT-secured REST and WebSocket endpoints, PostgreSQL persistence, and optional OpenAI-powered responses. Paired with a modern React frontend.
-
-**Stack:** Node.js · Express · Socket.IO · PostgreSQL · JWT · React · OpenAI API
 
 ---
 
