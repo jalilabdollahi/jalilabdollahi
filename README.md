@@ -93,6 +93,16 @@ Each level gives you a real scripting task with automated tests, hints that esca
 
 ---
 
+### [PythonMissions](https://github.com/jalilabdollahi/pythonmissions) — Learn Python for DevOps by fixing broken scripts
+
+> 15 progressive missions · 3 difficulty bands · Beginner to advanced
+
+A fully local Python troubleshooting game where each mission gives you a broken script to repair in a safe sandbox. Fix the bug, run the tests, read the debrief, and move forward through a structured path from simple syntax issues to more realistic DevOps-style automation problems.
+
+**Stack:** Python · Rich · pytest · sandboxed mission runner
+
+---
+
 ### [GitMissions](https://github.com/jalilabdollahi/gitmissions) — Learn Git by breaking it — then fixing it
 
 > 225 challenges · 14 modules · First commits to incident war games
