@@ -208,6 +208,16 @@ A full-stack reporting system for recording daily technical work by date, tracki
 
 ---
 
+### Kartico — German vocabulary learning platform with spaced repetition and public deck discovery
+
+> Flashcards · article quiz · public deck store · institute workflows · mobile-ready PWA/app shell
+
+Kartico is a full-stack language learning platform for German learners, individual students, and institutes. It combines deck and card authoring, spaced repetition review, article-focused quizzes, public deck subscriptions, institute class workflows, site-admin tooling, daily learning goals, and a mobile-ready React frontend wrapped for app distribution with Capacitor.
+
+**Stack:** React · Vite · Tailwind CSS · Node.js · Express · SQLite · JWT · Capacitor
+
+---
+
 <div align="center">
 
 [![Email](https://img.shields.io/badge/jalil.abdollahi@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:jalil.abdollahi@gmail.com)
