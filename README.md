@@ -208,7 +208,7 @@ A full-stack reporting system for recording daily technical work by date, tracki
 
 ---
 
-### Kartico — German vocabulary learning platform with spaced repetition and public deck discovery
+### [Kartico](https://github.com/jalilabdollahi/kartico) — German vocabulary learning platform with spaced repetition and public deck discovery
 
 > Flashcards · article quiz · public deck store · institute workflows · mobile-ready PWA/app shell
 
