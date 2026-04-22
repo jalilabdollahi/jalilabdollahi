@@ -113,7 +113,7 @@ A fully local Python troubleshooting game where each mission gives you a broken 
 
 ---
 
-### [TerraformMissions](https://github.com/jalilabdollahi/terraformissions) — Learn Terraform by breaking it
+### [TerraformMissions](https://github.com/jalilabdollahi/terraformmissions) — Learn Terraform by breaking it
 
 > 272 missions · 15 modules · Fundamentals to production war games
 
