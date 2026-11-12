@@ -1,89 +1,74 @@
-<div align="center">
+# Hi, I'm Jalil 👋
 
-# Jalil Abdollahi
+**Cloud DevOps & Platform Engineer** · Duisburg, Germany
 
-### Cloud DevOps & Platform Engineer
-
-AWS · Kubernetes · Terraform · CI/CD · LLM-assisted automation
-
-Duisburg, Germany · Open to remote roles
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-jalil--abdollahi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jalil-abdollahi)
-[![Email](https://img.shields.io/badge/Email-Get%20in%20touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jalil.abdollahi@gmail.com)
-
-</div>
+I'm the person who gets curious when something breaks. A deploy that fails for no clear reason, a pod that won't schedule, an IAM policy that denies when it shouldn't: that's the part of the job I enjoy most. I like problems that don't have an answer on the first page of search results, and I stay with them until I understand *why* the fix works, not just *that* it works.
 
 ---
 
-I build and run production AWS and Kubernetes platforms, and I build the tooling that makes them safer to operate and easier to learn. 9 years in infrastructure and DevOps, 5+ of them on production AWS and Kubernetes, with a background in C#/.NET software engineering.
+## What drives me
 
-**Selected results**
+**I like a challenge.**
+Over 9 years I've kept moving toward the harder problems: from writing C#/.NET applications, to building a data center, to running production AWS and Kubernetes platforms. The work nobody wants to touch is usually the work I volunteer for, like upgrading five EKS clusters across ten Kubernetes versions without a minute of downtime, or rebuilding the legacy Jenkins setup the whole team was afraid of.
 
-- Led **zero-downtime EKS upgrades across five clusters**, from v1.26 to v1.36
-- Rebuilt an unreliable legacy **Jenkins CI platform** into two masters and nine agents, restoring stability and parallel build capacity
-- Migrated workloads from KIAM to **EKS Pod Identity**, removing static credentials from the cluster
-- Built **LLM-assisted log analysis** that reads application and infrastructure logs and surfaces likely root causes
-- Wrote internal **Go tools** for SSH connection management and day-to-day infrastructure administration
-- Led a data-center build-out to **TIA-942 Tier 2**, with Ansible-automated network and VMware provisioning
+**I never stop learning.**
+I learn a tool properly by breaking it and fixing it, again and again. That habit grew into the Missions projects below: you don't really understand Helm until you've debugged a few dozen broken releases. Outside of tech, I'm learning German (B2 so far) and still going.
+
+**I build tools so nobody has to suffer twice.**
+If something slows me or my teammates down more than once, I'd rather build a tool than repeat the pain. That's how I ended up writing Go tools for SSH and day-to-day infrastructure work, and an LLM-assisted log analyzer that reads application and infrastructure logs and points at the likely root cause. Today most of these tools are built together with Claude.
 
 ---
 
-## Experience
+## How I work with AI
 
-| Role | Company | Period |
+AI is part of how I work every day, not a side experiment.
+
+- **Claude is my pair programmer.** I design the idea, the structure and the quality bar, and build it together with Claude Code. Most of the projects on this profile were made that way.
+- **I connect models to real systems** through MCP servers, n8n workflows, Amazon Bedrock, and the Claude and OpenAI APIs.
+- **I design LLM steps to be reliable**, with structured outputs, guardrails and validation, so they behave like any other component in a pipeline.
+- **I stay in charge of the result.** AI makes me much faster, but it doesn't make the decisions. I read what it writes, and I prove it works with tests: every one of the 2,450+ missions below has a check that its broken state fails and its solution passes.
+- **I know where it fits.** It's great for log triage, first drafts, tooling and test coverage. It doesn't touch production without a human in the loop.
+
+---
+
+## Things I've built
+
+### Missions: learn DevOps by fixing broken things
+
+A series of free, fully local training games. Each mission drops you into a deliberately broken environment on your own machine. You fix it with the real CLI, and a validator checks the result the way production would. No cloud account, no bill.
+
+| Project | What you fix | Size |
 |---|---|---|
-| Cloud DevOps Engineer | JAJA Finance · London (remote) | 2023 – 2026 |
-| Cloud DevOps Engineer | FleetSpark · Berlin (remote) | 2021 – 2023 |
-| Cloud DevOps Engineer | Imperium Drive · Berlin (remote) | 2021 |
-| NetOps & DevOps Engineer | Islamic Azad University · Tehran | 2017 – 2021 |
-| Software Engineer (C#/.NET) | Freelance | 2015 – 2020 |
+| [**AWSMissions**](https://github.com/jalilabdollahi/awsmissions) | IAM, S3, Lambda, VPC, ECS and more, on a local AWS emulator with real IAM evaluation | 268 missions |
+| [**K8sMissions**](https://github.com/jalilabdollahi/k8smissions) | Broken clusters, from pod crashes to multi-failure war games | 200 missions |
+| [**HelmMissions**](https://github.com/jalilabdollahi/helmmissions) | Broken charts, releases and upgrade paths, with a local OCI registry | 133 missions |
+| [**TerraformMissions**](https://github.com/jalilabdollahi/terraformmissions) | Broken HCL, state, modules and tests | 272 missions |
+| [**DockerMissions**](https://github.com/jalilabdollahi/dockermissions) | Containers, images, networks and Compose, in a browser terminal | 54 missions |
+| [**LinuxMissions**](https://github.com/jalilabdollahi/linuxmissions) | Services, packages, cron, users and networking | 500 missions |
+| [**BashMissions**](https://github.com/jalilabdollahi/bashmissions) | Real scripting tasks with automated tests | 500 levels |
+| [**GitMissions**](https://github.com/jalilabdollahi/gitmissions) | Broken repositories, up to incident war games | 225 missions |
+| [**PythonMissions**](https://github.com/jalilabdollahi/pythonmissions) | Broken DevOps scripts, checked by 2,080 tests | 300 missions |
+
+### Tools for my own work (private)
+
+- **InfraPilot**: an AI infrastructure copilot that turns plain-English AWS requests into Terraform plans, with approval gates and cost estimates
+- **Datadog Log Analyzer**: anomaly and spike detection with AI-written incident summaries, as a CLI, a web dashboard or on AWS Lambda
+
+Happy to walk through either of them.
 
 ---
 
-## Missions: hands-on DevOps training I build and maintain
+## Toolbox
 
-**2,450+ hand-written troubleshooting missions across nine tools.** Each mission ships a deliberately broken environment on your own machine. You fix it with the real CLI, and a validator checks the result by behaviour, the way production would. No cloud account, no bill.
-
-| Project | What you fix | Size | Built with |
-|---|---|---|---|
-| [**AWSMissions**](https://github.com/jalilabdollahi/awsmissions) | Broken IAM, S3, Lambda, VPC, ECS and more, on a local AWS emulator with real IAM evaluation | 268 missions · 16 modules | Python · Floci · AWS CLI · Docker |
-| [**K8sMissions**](https://github.com/jalilabdollahi/k8smissions) | Broken clusters, from pod crashes to multi-failure war games | 200 missions · 12 modules | Python · kind · kubectl |
-| [**HelmMissions**](https://github.com/jalilabdollahi/helmmissions) | Broken charts, releases and upgrade paths, against a local OCI registry | 133 missions · 10 modules | Python · Helm 3/4 · kind |
-| [**TerraformMissions**](https://github.com/jalilabdollahi/terraformmissions) | Broken HCL, state, modules and tests, up to production war games | 272 missions · 15 modules | Python · Terraform |
-| [**DockerMissions**](https://github.com/jalilabdollahi/dockermissions) | Containers, images, networks, Compose and registries, in a browser terminal | 54 missions · 8 modules | Node.js · React · xterm.js |
-| [**LinuxMissions**](https://github.com/jalilabdollahi/linuxmissions) | Broken systems: services, packages, cron, users, networking | 500 missions · 26 modules | Python · Bash · Docker |
-| [**BashMissions**](https://github.com/jalilabdollahi/bashmissions) | Real scripting tasks with isolated automated tests | 500 levels · 26 modules | Python · Bash |
-| [**GitMissions**](https://github.com/jalilabdollahi/gitmissions) | Broken repositories, from first commits to incident war games | 225 missions · 14 modules | Python · Git |
-| [**PythonMissions**](https://github.com/jalilabdollahi/pythonmissions) | Broken DevOps scripts, from basics to distributed-systems internals | 300 missions · 2,080 tests | Python · pytest |
-
-**How they are engineered**
-
-- **Behaviour-based validation.** A fix is proven by acting on it: assuming the role, invoking the function, upgrading the release. Over-broad fixes such as `"Action": "*"` or `0.0.0.0/0` are rejected.
-- **Every level is tested.** Setup must succeed, a fresh sandbox must fail, and the reference solution must pass.
-- **Safe by design.** Isolated sandboxes, local emulators and context guards mean a mission can never touch a real account or cluster.
+- **Cloud & platforms:** AWS (EKS, ECS, Lambda, Bedrock) · Kubernetes · Helm · Docker
+- **Infrastructure & delivery:** Terraform · Ansible · Jenkins · GitHub Actions · Argo CD · Flux
+- **Observability & security:** Datadog · Prometheus · Grafana · CloudWatch · Vault · WIZ
+- **Code:** Go · Bash · Python · C#/.NET
+- **AI:** Claude · Claude Code · MCP · Amazon Bedrock · OpenAI · n8n
 
 ---
 
-## Other work
+Always happy to talk about platforms, broken clusters, or how to get more out of AI in day-to-day engineering.
 
-- [**Daily Report App**](https://github.com/jalilabdollahi/daily-report-app): full-stack daily work reporting for engineering teams, shipped with Docker, Terraform and GHCR image publishing. *Next.js · PostgreSQL · Prisma*
-- **Private repositories**, happy to walk through them in an interview:
-  - **InfraPilot**: an AI infrastructure copilot that turns plain-English AWS requests into Terraform plans, with approval gates and cost estimates
-  - **Datadog Log Analyzer**: anomaly detection, spike detection and AI-assisted incident summaries for Datadog logs, running as a CLI, a web dashboard or on AWS Lambda
-  - **Log Generator**: a realistic microservice log simulator for testing alerting and anomaly-detection pipelines
-
----
-
-## Tech stack
-
-| Area | Tools |
-|---|---|
-| **Cloud & containers** | AWS (EKS, ECS Fargate, EC2, Lambda, API Gateway, Kinesis, Bedrock, SSO) · Kubernetes · Docker · Helm |
-| **Infrastructure as code** | Terraform · Ansible · Puppet |
-| **CI/CD & GitOps** | Jenkins · GitHub Actions · GitLab CI · Argo CD · Flux |
-| **Observability** | Datadog · CloudWatch · Prometheus · Grafana · Loki |
-| **Security** | HashiCorp Vault · WIZ · CloudTrail · EKS Pod Identity · IAM |
-| **Languages** | Go · Bash · Python · C#/.NET |
-| **AI & automation** | Claude · OpenAI · Amazon Bedrock · MCP · n8n · structured LLM outputs |
-
-**Languages:** English (professional working proficiency) · German (B2)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jalil--abdollahi-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/jalil-abdollahi)
+[![Email](https://img.shields.io/badge/Email-jalil.abdollahi@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:jalil.abdollahi@gmail.com)
