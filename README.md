@@ -2,236 +2,88 @@
 
 # Jalil Abdollahi
 
-**Senior Cloud DevOps Engineer · Infrastructure Tooling · Platform Education**
+### Cloud DevOps & Platform Engineer
 
-[![Email](https://img.shields.io/badge/Email-jalil.abdollahi@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:jalil.abdollahi@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-jalil--abdollahi-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/jalil-abdollahi)
-[![Location](https://img.shields.io/badge/Location-Duisburg%2C%20Germany-4CAF50?style=flat-square&logo=googlemaps&logoColor=white)](https://maps.google.com/?q=Duisburg,Germany)
+AWS · Kubernetes · Terraform · CI/CD · LLM-assisted automation
+
+Duisburg, Germany · Open to remote roles
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jalil--abdollahi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jalil-abdollahi)
+[![Email](https://img.shields.io/badge/Email-Get%20in%20touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jalil.abdollahi@gmail.com)
 
 </div>
 
 ---
 
-## About Me
+I build and run production AWS and Kubernetes platforms, and I build the tooling that makes them safer to operate and easier to learn. 9 years in infrastructure and DevOps, 5+ of them on production AWS and Kubernetes, with a background in C#/.NET software engineering.
 
-Senior DevOps Engineer with 10+ years of IT experience and 5+ years focused on cloud platforms, Kubernetes, and CI/CD automation. I design, build, and operate production AWS and Kubernetes infrastructure — and I build the tools that make that work faster, safer, and more teachable.
+**Selected results**
 
-Currently working as a **Cloud DevOps Engineer at JAJA Finance** (London, Remote), where I lead CI/CD standardization with Jenkins and GitHub Actions, operate multi-cluster AWS EKS platforms with Terraform, and drive GitOps adoption with ArgoCD.
-
-Outside of my day job I build **AI-powered infrastructure tooling** and a series of **hands-on training platforms** where engineers learn Kubernetes, Helm, AWS, Terraform, Linux, Bash, Python, Docker, and Git by fixing deliberately broken environments — no cloud bill, no accounts, just real tools.
+- Led **zero-downtime EKS upgrades across five clusters**, from v1.26 to v1.36
+- Rebuilt an unreliable legacy **Jenkins CI platform** into two masters and nine agents, restoring stability and parallel build capacity
+- Migrated workloads from KIAM to **EKS Pod Identity**, removing static credentials from the cluster
+- Built **LLM-assisted log analysis** that reads application and infrastructure logs and surfaces likely root causes
+- Wrote internal **Go tools** for SSH connection management and day-to-day infrastructure administration
+- Led a data-center build-out to **TIA-942 Tier 2**, with Ansible-automated network and VMware provisioning
 
 ---
 
-## Skills
+## Experience
 
-| Area | Technologies |
+| Role | Company | Period |
+|---|---|---|
+| Cloud DevOps Engineer | JAJA Finance · London (remote) | 2023 – 2026 |
+| Cloud DevOps Engineer | FleetSpark · Berlin (remote) | 2021 – 2023 |
+| Cloud DevOps Engineer | Imperium Drive · Berlin (remote) | 2021 |
+| NetOps & DevOps Engineer | Islamic Azad University · Tehran | 2017 – 2021 |
+| Software Engineer (C#/.NET) | Freelance | 2015 – 2020 |
+
+---
+
+## Missions: hands-on DevOps training I build and maintain
+
+**2,450+ hand-written troubleshooting missions across nine tools.** Each mission ships a deliberately broken environment on your own machine. You fix it with the real CLI, and a validator checks the result by behaviour, the way production would. No cloud account, no bill.
+
+| Project | What you fix | Size | Built with |
+|---|---|---|---|
+| [**AWSMissions**](https://github.com/jalilabdollahi/awsmissions) | Broken IAM, S3, Lambda, VPC, ECS and more, on a local AWS emulator with real IAM evaluation | 268 missions · 16 modules | Python · Floci · AWS CLI · Docker |
+| [**K8sMissions**](https://github.com/jalilabdollahi/k8smissions) | Broken clusters, from pod crashes to multi-failure war games | 200 missions · 12 modules | Python · kind · kubectl |
+| [**HelmMissions**](https://github.com/jalilabdollahi/helmmissions) | Broken charts, releases and upgrade paths, against a local OCI registry | 133 missions · 10 modules | Python · Helm 3/4 · kind |
+| [**TerraformMissions**](https://github.com/jalilabdollahi/terraformmissions) | Broken HCL, state, modules and tests, up to production war games | 272 missions · 15 modules | Python · Terraform |
+| [**DockerMissions**](https://github.com/jalilabdollahi/dockermissions) | Containers, images, networks, Compose and registries, in a browser terminal | 54 missions · 8 modules | Node.js · React · xterm.js |
+| [**LinuxMissions**](https://github.com/jalilabdollahi/linuxmissions) | Broken systems: services, packages, cron, users, networking | 500 missions · 26 modules | Python · Bash · Docker |
+| [**BashMissions**](https://github.com/jalilabdollahi/bashmissions) | Real scripting tasks with isolated automated tests | 500 levels · 26 modules | Python · Bash |
+| [**GitMissions**](https://github.com/jalilabdollahi/gitmissions) | Broken repositories, from first commits to incident war games | 225 missions · 14 modules | Python · Git |
+| [**PythonMissions**](https://github.com/jalilabdollahi/pythonmissions) | Broken DevOps scripts, from basics to distributed-systems internals | 300 missions · 2,080 tests | Python · pytest |
+
+**How they are engineered**
+
+- **Behaviour-based validation.** A fix is proven by acting on it: assuming the role, invoking the function, upgrading the release. Over-broad fixes such as `"Action": "*"` or `0.0.0.0/0` are rejected.
+- **Every level is tested.** Setup must succeed, a fresh sandbox must fail, and the reference solution must pass.
+- **Safe by design.** Isolated sandboxes, local emulators and context guards mean a mission can never touch a real account or cluster.
+
+---
+
+## Other work
+
+- [**Daily Report App**](https://github.com/jalilabdollahi/daily-report-app): full-stack daily work reporting for engineering teams, shipped with Docker, Terraform and GHCR image publishing. *Next.js · PostgreSQL · Prisma*
+- **Private repositories**, happy to walk through them in an interview:
+  - **InfraPilot**: an AI infrastructure copilot that turns plain-English AWS requests into Terraform plans, with approval gates and cost estimates
+  - **Datadog Log Analyzer**: anomaly detection, spike detection and AI-assisted incident summaries for Datadog logs, running as a CLI, a web dashboard or on AWS Lambda
+  - **Log Generator**: a realistic microservice log simulator for testing alerting and anomaly-detection pipelines
+
+---
+
+## Tech stack
+
+| Area | Tools |
 |---|---|
-| **Cloud & Platforms** | AWS · EKS · ECS Fargate · EC2 · IAM · VPC |
-| **Containers & Orchestration** | Docker · Kubernetes · Helm · Kustomize |
-| **CI/CD & GitOps** | Jenkins · GitHub Actions · ArgoCD · Argo Workflows |
-| **Infrastructure as Code** | Terraform · Ansible · Puppet · Crossplane · HashiCorp Vault |
-| **Observability** | Datadog · Prometheus · Grafana · Loki · CloudWatch · CloudTrail |
-| **Security** | OPA/Gatekeeper · WIZ · Kubernetes RBAC · IAM · Pod Identity |
-| **Scripting & Programming** | Bash · Python · HCL · YAML · C#/.NET · Go (basic) |
-| **Operations** | Linux · Git · GitHub · GitLab · Bitbucket · Agile/Scrum |
-
----
-
-## Mission-Based Learning Platforms
-
-A series of fully local, game-based training platforms. Each one drops you into a deliberately broken environment and makes you fix it with real CLI commands — no cloud bill, no account required.
-
----
-
-### [AWSMissions](https://github.com/jalilabdollahi/awsmissions) — Learn AWS by fixing it locally
-
-> 268 hand-written missions · 16 modules · No AWS account required
-
-A fully local AWS training game running on [Floci](https://github.com/floci-io/floci), an open-source AWS emulator with real IAM policy evaluation. Each mission drops you into a broken cloud environment — investigate what went wrong and repair it with the real `aws` CLI. Fixes are proven by behaviour, not by reading a JSON field: the validator acts as the affected role, invokes the function or calls the API, and rejects over-broad fixes like `"Action": "*"`. Lambda, ECS and EC2 run as real containers, and every mission has progressive hints and a debrief.
-
-**Stack:** Python · Rich · Floci · AWS CLI · Docker
-
----
-
-### [BashMissions](https://github.com/jalilabdollahi/bashmissions) — Learn Bash scripting through short, progressive challenges
-
-> 500 levels · 26 modules · Beginner to expert scripting
-
-You play the newest operations engineer at a hosting company; every level is a real task from a colleague, with a sandboxed workspace, isolated automated tests, hints that escalate into a walkthrough, a reference answer, and a post-level lesson. Watch mode reruns validation as you write, and offline stubs keep network and system levels deterministic on macOS and Linux.
-
-**Stack:** Python · Rich · Bash · automated test runner
-
----
-
-### [DockerMissions](https://github.com/jalilabdollahi/dockermissions) — Learn Docker in a real terminal, in your browser
-
-> 54 missions · 8 modules · Containers to production patterns
-
-A browser-based Docker training game with an in-browser bash session connected to a live Docker environment. Instant automated validation, smart error analysis, XP progression, badges, and a leaderboard — all running locally.
-
-**Stack:** Node.js · React · xterm.js · Docker · Socket.IO
-
----
-
-### [GitMissions](https://github.com/jalilabdollahi/gitmissions) — Learn Git by breaking it — then fixing it
-
-> 225 challenges · 14 modules · First commits to incident war games
-
-Each mission drops you into a deliberately broken Git repository in its own sandbox. Diagnose the state, fix it with real `git` commands, and pass automated validation. Watch mode completes the level as soon as it passes, and post-mission debriefs explain why your fix worked.
-
-**Stack:** Python · Rich · Git
-
----
-
-### [HelmMissions](https://github.com/jalilabdollahi/helmmissions) — Learn Helm by breaking it, then fixing it
-
-> 133 hand-crafted missions · 10 modules · First install to production war games
-
-Each mission puts a deliberately broken chart, release, or upgrade path in front of you on a local kind cluster with its own OCI registry and chart repository. Fix it with real `helm` and `kubectl`. Validation is behaviour-based: any correct fix passes, but hotfixes that Helm would undo on the next upgrade don't. Written for Helm 4 and compatible with Helm 3.14+.
-
-**Stack:** Python · Rich · Helm · kind · kubectl
-
----
-
-### [K8sMissions](https://github.com/jalilabdollahi/k8smissions) — Learn Kubernetes by breaking it
-
-> 200 progressive challenges · 12 modules · Beginner to production SRE
-
-Each mission presents a deliberately broken Kubernetes cluster. Diagnose and fix it using real `kubectl` commands. Every level starts from a clean baseline, and Helm, Kustomize, Argo CD and Tekton levels run against the real projects. Features a rich terminal UI with XP progression, hint unlocking, watch mode, dry-run support, and module certificates.
-
-**Stack:** Python · Rich · kind · kubectl
-
----
-
-### [LinuxMissions](https://github.com/jalilabdollahi/linuxmissions) — Learn Linux by fixing real terminal problems
-
-> 500 challenges · 26 modules · Navigation to Linux war games
-
-Each level drops you into a sandbox with something broken, incomplete, or messy to fix with real shell commands. Every level is tested: a fresh sandbox fails and the reference solution passes. Realistic stand-ins for systemd, apt, cron, users, sshd and network services let root-level and online scenarios run offline as a normal user, and a Docker play mode ships every tool the levels need.
-
-**Stack:** Python · Rich · Bash · Docker · sandbox isolation
-
----
-
-### [PythonMissions](https://github.com/jalilabdollahi/pythonmissions) — Learn Python for DevOps by fixing broken scripts
-
-> 300 unique missions · 3 difficulty bands · 2,080 mission tests
-
-Each mission drops you into a realistic broken script — a deploy gate, a log parser, a token bucket, a Raft vote handler, a CD orchestrator. Read the story, find the bugs, fix them in a per-mission sandbox, and prove your work with pytest; every planted bug is caught by at least one test. Goes from Python basics to distributed-systems internals, with three progressive hints, a debrief, and XP ranks along the way.
-
-**Stack:** Python · Rich · pytest · sandboxed mission runner
-
----
-
-### [TerraformMissions](https://github.com/jalilabdollahi/terraformmissions) — Learn Terraform by breaking it
-
-> 272 missions · 15 modules · Fundamentals to production war games
-
-Each mission delivers a broken `.tf` configuration. Fix it using real Terraform commands — `init`, `validate`, `plan`, `apply`. Covers HCL, state management, modules, testing, debugging, and production patterns.
-
-**Stack:** Python · Rich · Terraform · local providers
-
----
-
-## AI & Cloud Tools
-
----
-
-### [Datadog Log Analyzer](https://github.com/jalilabdollahi/datadog-log-analyzer) — Anomaly detection and incident reporting for Datadog logs
-
-> CLI · Web dashboard · AWS Lambda — same analysis engine across all modes
-
-Turns noisy Datadog log streams into actionable findings. Features pattern detection via tokenization and fingerprinting, spike detection, error correlation across services, trend analysis with rolling baselines, and AI-assisted incident summaries via Bedrock. Outputs Slack alerts, Jira tickets, HTML and JSON reports.
-
-**Stack:** Python · Datadog API · AWS Lambda · DynamoDB · Bedrock · Docker · Helm
-
----
-
-### [InfraPilot](https://github.com/jalilabdollahi/InfraPilot) — AI infrastructure copilot for AWS
-
-> Plain-English requests → Terraform plans → approval gates → real deployments
-
-InfraPilot translates natural-language AWS requests into structured Terraform configurations, runs them through approval workflows, applies them, validates the result, and produces a deployment report. Available as a CLI, REST API, and web app — all backed by the same core agent runtime.
-
-**Highlights:**
-- Natural-language intent captured and converted to Terraform specs
-- Approval-first workflow with pre-deployment cost estimates
-- Pluggable LLM providers: Bedrock, Anthropic, OpenAI, or mock
-- Git-aware sessions with sync and report export
-- Local demo mode — explore the product without touching AWS
-
-**Stack:** Python · Next.js · Terraform · AWS · FastAPI
-
----
-
-### [KubeGuardian](https://github.com/jalilabdollahi/kubeguardian) — Kubernetes operations and risk detection
-
-> Connect to any cluster · detect misconfigurations · output JSON, table, or Markdown
-
-KubeGuardian scans your cluster state — nodes, pods, deployments, replicasets, namespaces — and surfaces operational misconfigurations, security risks, and availability issues using a set of built-in detection rules. CI/CD ready with configurable severity thresholds.
-
-**Stack:** Python · Kubernetes API · fully typed
-
----
-
-### [Log Generator](https://github.com/jalilabdollahi/log-generator) — Realistic microservice log simulator for observability testing
-
-> 10 simulated microservices · structured JSON · scenario-based incidents · Datadog-ready
-
-Simulates believable operational noise and targeted failure bursts for testing log pipelines, alerting rules, and anomaly detection workflows — without waiting for a real outage. Pure Python standard library, local file output, and optional Docker support.
-
-**Stack:** Python · Docker · Datadog host-agent integration
-
----
-
-## Web Applications
-
----
-
-### [AI Chat](https://github.com/jalilabdollahi/ai-chat-backend) — Real-time chat with optional AI-powered responses
-
-> WebSocket messaging · JWT auth · PostgreSQL · OpenAI integration
-
-A real-time chat backend built with Express and Socket.IO, with JWT-secured REST and WebSocket endpoints, PostgreSQL persistence, and optional OpenAI-powered responses. Paired with a modern React frontend.
-
-**Stack:** Node.js · Express · Socket.IO · PostgreSQL · JWT · React · OpenAI API
-
----
-
-### [Agency SaaS Platform](https://github.com/jalilabdollahi/agency-saas-platform) — Full-stack agency website and client operations platform
-
-> Lead capture · client portal · support tickets · admin console · multilingual
-
-A production-style Next.js application combining a marketing site with client onboarding, a support ticket system, admin workflows, blog content, authentication, and email integration. Built for real agency operations, not a landing page demo.
-
-**Stack:** Next.js 14 · PostgreSQL · Prisma · NextAuth · Resend · Upstash Redis · next-intl
-
----
-
-### [Daily Report App](https://github.com/jalilabdollahi/daily-report-app) — Structured daily work reporting platform for engineering teams
-
-> Task logging · admin oversight · export · analytics · production-ready deployment
-
-A full-stack reporting system for recording daily technical work by date, tracking progress, and producing operational reports. Includes search and filtering, attachments, bulk workflows, a duplicate-previous-day shortcut, admin controls, and production tooling with Docker, Terraform, and GHCR image publishing.
-
-**Stack:** Next.js 14 · PostgreSQL · Prisma · NextAuth v5 · Docker · Terraform
-
----
-
-### [Kartico](https://github.com/jalilabdollahi/kartico) — German vocabulary learning platform with spaced repetition and public deck discovery
-
-> Flashcards · article quiz · public deck store · institute workflows · mobile-ready PWA/app shell
-
-Kartico is a full-stack language learning platform for German learners, individual students, and institutes. It combines deck and card authoring, spaced repetition review, article-focused quizzes, public deck subscriptions, institute class workflows, site-admin tooling, daily learning goals, and a mobile-ready React frontend wrapped for app distribution with Capacitor.
-
-**Stack:** React · Vite · Tailwind CSS · Node.js · Express · SQLite · JWT · Capacitor
-
----
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/jalil.abdollahi@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:jalil.abdollahi@gmail.com)
-&nbsp;
-[![LinkedIn](https://img.shields.io/badge/jalil--abdollahi-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/jalil-abdollahi)
-
-</div>
+| **Cloud & containers** | AWS (EKS, ECS Fargate, EC2, Lambda, API Gateway, Kinesis, Bedrock, SSO) · Kubernetes · Docker · Helm |
+| **Infrastructure as code** | Terraform · Ansible · Puppet |
+| **CI/CD & GitOps** | Jenkins · GitHub Actions · GitLab CI · Argo CD · Flux |
+| **Observability** | Datadog · CloudWatch · Prometheus · Grafana · Loki |
+| **Security** | HashiCorp Vault · WIZ · CloudTrail · EKS Pod Identity · IAM |
+| **Languages** | Go · Bash · Python · C#/.NET |
+| **AI & automation** | Claude · OpenAI · Amazon Bedrock · MCP · n8n · structured LLM outputs |
+
+**Languages:** English (professional working proficiency) · German (B2)
