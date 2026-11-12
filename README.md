@@ -18,7 +18,7 @@ Senior DevOps Engineer with 10+ years of IT experience and 5+ years focused on c
 
 Currently working as a **Cloud DevOps Engineer at JAJA Finance** (London, Remote), where I lead CI/CD standardization with Jenkins and GitHub Actions, operate multi-cluster AWS EKS platforms with Terraform, and drive GitOps adoption with ArgoCD.
 
-Outside of my day job I build **AI-powered infrastructure tooling** and a series of **hands-on training platforms** where engineers learn Kubernetes, AWS, Terraform, Linux, Bash, Docker, and Git by fixing deliberately broken environments — no cloud bill, no accounts, just real tools.
+Outside of my day job I build **AI-powered infrastructure tooling** and a series of **hands-on training platforms** where engineers learn Kubernetes, Helm, AWS, Terraform, Linux, Bash, Python, Docker, and Git by fixing deliberately broken environments — no cloud bill, no accounts, just real tools.
 
 ---
 
@@ -45,11 +45,11 @@ A series of fully local, game-based training platforms. Each one drops you into 
 
 ### [AWSMissions](https://github.com/jalilabdollahi/awsmissions) — Learn AWS by fixing it locally
 
-> 196 progressive missions · 12 modules · No AWS account required
+> 268 hand-written missions · 16 modules · No AWS account required
 
-A fully local AWS training game powered by LocalStack. Each mission drops you into a broken cloud environment — investigate what went wrong and repair it with the real `aws` CLI. Every level includes hints, a reference solution, and a debrief explaining the failure.
+A fully local AWS training game running on [Floci](https://github.com/floci-io/floci), an open-source AWS emulator with real IAM policy evaluation. Each mission drops you into a broken cloud environment — investigate what went wrong and repair it with the real `aws` CLI. Fixes are proven by behaviour, not by reading a JSON field: the validator acts as the affected role, invokes the function or calls the API, and rejects over-broad fixes like `"Action": "*"`. Lambda, ECS and EC2 run as real containers, and every mission has progressive hints and a debrief.
 
-**Stack:** Python · Rich · LocalStack · AWS CLI · Docker
+**Stack:** Python · Rich · Floci · AWS CLI · Docker
 
 ---
 
@@ -57,7 +57,7 @@ A fully local AWS training game powered by LocalStack. Each mission drops you in
 
 > 500 levels · 26 modules · Beginner to expert scripting
 
-Each level gives you a real scripting task with automated tests, hints that escalate into walkthroughs, and a reference solution. Watch mode reruns validation automatically as you write. Includes a general Bash handbook via `guide bash`.
+You play the newest operations engineer at a hosting company; every level is a real task from a colleague, with a sandboxed workspace, isolated automated tests, hints that escalate into a walkthrough, a reference answer, and a post-level lesson. Watch mode reruns validation as you write, and offline stubs keep network and system levels deterministic on macOS and Linux.
 
 **Stack:** Python · Rich · Bash · automated test runner
 
@@ -77,9 +77,19 @@ A browser-based Docker training game with an in-browser bash session connected t
 
 > 225 challenges · 14 modules · First commits to incident war games
 
-Each mission drops you into a deliberately broken Git repository. Diagnose the state, fix it with real `git` commands, and pass automated validation. Post-mission debriefs explain why your fix worked.
+Each mission drops you into a deliberately broken Git repository in its own sandbox. Diagnose the state, fix it with real `git` commands, and pass automated validation. Watch mode completes the level as soon as it passes, and post-mission debriefs explain why your fix worked.
 
 **Stack:** Python · Rich · Git
+
+---
+
+### [HelmMissions](https://github.com/jalilabdollahi/helmmissions) — Learn Helm by breaking it, then fixing it
+
+> 133 hand-crafted missions · 10 modules · First install to production war games
+
+Each mission puts a deliberately broken chart, release, or upgrade path in front of you on a local kind cluster with its own OCI registry and chart repository. Fix it with real `helm` and `kubectl`. Validation is behaviour-based: any correct fix passes, but hotfixes that Helm would undo on the next upgrade don't. Written for Helm 4 and compatible with Helm 3.14+.
+
+**Stack:** Python · Rich · Helm · kind · kubectl
 
 ---
 
@@ -87,7 +97,7 @@ Each mission drops you into a deliberately broken Git repository. Diagnose the s
 
 > 200 progressive challenges · 12 modules · Beginner to production SRE
 
-Each mission presents a deliberately broken Kubernetes cluster. Diagnose and fix it using real `kubectl` commands. Features a rich terminal UI with XP progression, hint unlocking, watch mode, dry-run support, and module certificates.
+Each mission presents a deliberately broken Kubernetes cluster. Diagnose and fix it using real `kubectl` commands. Every level starts from a clean baseline, and Helm, Kustomize, Argo CD and Tekton levels run against the real projects. Features a rich terminal UI with XP progression, hint unlocking, watch mode, dry-run support, and module certificates.
 
 **Stack:** Python · Rich · kind · kubectl
 
@@ -97,17 +107,17 @@ Each mission presents a deliberately broken Kubernetes cluster. Diagnose and fix
 
 > 500 challenges · 26 modules · Navigation to Linux war games
 
-A game-based Linux training platform with sandboxed missions under `/tmp/linuxmissions/`. Each level has a broken or incomplete state to fix with shell commands. Includes debriefs, tab autocomplete, XP tracking, and progressive hints.
+Each level drops you into a sandbox with something broken, incomplete, or messy to fix with real shell commands. Every level is tested: a fresh sandbox fails and the reference solution passes. Realistic stand-ins for systemd, apt, cron, users, sshd and network services let root-level and online scenarios run offline as a normal user, and a Docker play mode ships every tool the levels need.
 
-**Stack:** Python · Rich · Bash · sandbox isolation
+**Stack:** Python · Rich · Bash · Docker · sandbox isolation
 
 ---
 
 ### [PythonMissions](https://github.com/jalilabdollahi/pythonmissions) — Learn Python for DevOps by fixing broken scripts
 
-> 15 progressive missions · 3 difficulty bands · Beginner to advanced
+> 300 unique missions · 3 difficulty bands · 2,080 mission tests
 
-A fully local Python troubleshooting game where each mission gives you a broken script to repair in a safe sandbox. Fix the bug, run the tests, read the debrief, and move forward through a structured path from simple syntax issues to more realistic DevOps-style automation problems.
+Each mission drops you into a realistic broken script — a deploy gate, a log parser, a token bucket, a Raft vote handler, a CD orchestrator. Read the story, find the bugs, fix them in a per-mission sandbox, and prove your work with pytest; every planted bug is caught by at least one test. Goes from Python basics to distributed-systems internals, with three progressive hints, a debrief, and XP ranks along the way.
 
 **Stack:** Python · Rich · pytest · sandboxed mission runner
 
