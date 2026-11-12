@@ -9,7 +9,7 @@ I'm the person who gets curious when something breaks. A deploy that fails for n
 ## What drives me
 
 **I like a challenge.**
-Over the years I've kept moving toward the harder problems: from writing C#/.NET applications, to building a data center, to running production AWS and Kubernetes platforms. The work nobody wants to touch is usually the work I volunteer for, like upgrading five EKS clusters across ten Kubernetes versions without a minute of downtime, or rebuilding the legacy Jenkins setup the whole team was afraid of.
+Over the years I've kept moving toward the harder problems: from writing C#/.NET applications, to building a data center, to running production AWS and Kubernetes platforms. The work nobody wants to touch is usually the work I volunteer for, like upgrading production EKS clusters through ten Kubernetes versions without a minute of downtime, or rebuilding the legacy Jenkins setup the whole team was afraid of.
 
 **I never stop learning.**
 I learn a tool properly by breaking it and fixing it, again and again. That habit grew into the Missions projects below: you don't really understand Helm until you've debugged a few dozen broken releases. Outside of tech, I'm learning German (B2 so far) and still going.
