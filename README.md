@@ -26,7 +26,7 @@ AI is part of how I work every day, not a side experiment.
 - **Claude is my pair programmer.** I design the idea, the structure and the quality bar, and build it together with Claude Code. Most of the projects on this profile were made that way.
 - **I connect models to real systems** through MCP servers, n8n workflows, Amazon Bedrock, and the Claude and OpenAI APIs.
 - **I design LLM steps to be reliable**, with structured outputs, guardrails and validation, so they behave like any other component in a pipeline.
-- **I stay in charge of the result.** AI makes me much faster, but it doesn't make the decisions. I read what it writes, and I prove it works with tests: every one of the 2,450+ missions below has a check that its broken state fails and its solution passes.
+- **I stay in charge of the result.** AI makes me much faster, but it doesn't make the decisions. I read what it writes, and I prove it works with tests: every one of the 2,550+ missions below has a check that its broken state fails and its solution passes.
 - **I know where it fits.** It's great for log triage, first drafts, tooling and test coverage. It doesn't touch production without a human in the loop.
 
 ---
@@ -42,6 +42,7 @@ A series of free, fully local training games. Each mission drops you into a deli
 | [**AWSMissions**](https://github.com/jalilabdollahi/awsmissions) | IAM, S3, Lambda, VPC, ECS and more, on a local AWS emulator with real IAM evaluation | 268 missions |
 | [**K8sMissions**](https://github.com/jalilabdollahi/k8smissions) | Broken clusters, from pod crashes to multi-failure war games | 200 missions |
 | [**HelmMissions**](https://github.com/jalilabdollahi/helmmissions) | Broken charts, releases and upgrade paths, with a local OCI registry | 133 missions |
+| [**ArgoMissions**](https://github.com/jalilabdollahi/argomissions) | Broken GitOps on a real Argo CD and Git server: sync, hooks, projects, ApplicationSets | 106 missions |
 | [**TerraformMissions**](https://github.com/jalilabdollahi/terraformmissions) | Broken HCL, state, modules and tests | 272 missions |
 | [**DockerMissions**](https://github.com/jalilabdollahi/dockermissions) | Containers, images, networks and Compose, in a browser terminal | 54 missions |
 | [**LinuxMissions**](https://github.com/jalilabdollahi/linuxmissions) | Services, packages, cron, users and networking | 500 missions |
